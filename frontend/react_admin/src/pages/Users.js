@@ -109,7 +109,7 @@ function Users() {
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [search, setSearch] = useState("");
 
-  const apiUrl = "http://localhost:3434"; // FastAPI 백엔드 주소
+  const apiUrl = "http://localhost:1122"; // FastAPI 백엔드 주소
 
   const fetchUsers = async () => {
     try {

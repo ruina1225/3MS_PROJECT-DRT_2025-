@@ -18,7 +18,7 @@ UUID_IMG_DIR = os.path.join(UPLOAD_DIR, "uuid_img") # UUID로 바꾼 이미지 �
 os.makedirs(UUID_IMG_DIR, exist_ok=True)
 
 # API 주소
-API_URL = "http://localhost:3434/users/add-photo" # 사진과 사용자 정보를 보낼 API 엔드포인트
+API_URL = "http://localhost:1122/users/add-photo" # 사진과 사용자 정보를 보낼 API 엔드포인트
 
 # 업로드할 사진 파일들만 필터링
 photo_files = sorted([
