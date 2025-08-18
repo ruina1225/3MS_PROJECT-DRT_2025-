@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 # from whisper_integration import transcribe_audio
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import user_router, hospital_router, visit_router, route_router
+from app.routers import user_router, hospital_router, visit_router, route_router, island_router
 from fastapi.staticfiles import StaticFiles
 import os
 
@@ -29,3 +29,4 @@ app.include_router(user_router.router, prefix="/users", tags=["Users"])
 app.include_router(hospital_router.router, prefix="/hospitals", tags=["Hospitals"])
 app.include_router(visit_router.router, prefix="/visits", tags=["Visits"])
 app.include_router(route_router.router, prefix="/routes", tags=["Routes"])
+app.include_router(island_router.router, prefix="/islands", tags=["Islands"])
